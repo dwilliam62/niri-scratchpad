@@ -82,7 +82,7 @@ def ns(parser):
     move_window_to_scratchpad(args.animations)
 
 def main():
-    parser = argparse.ArgumentParser(prog='niri-scratchpad', description='Niri Scratchpad support')
+    parser = argparse.ArgumentParser(prog='nscratch', description='Niri Scratchpad support')
     group = parser.add_mutually_exclusive_group(required=True)
 
     group.add_argument('-id', '--app-id', help='The application identifier')

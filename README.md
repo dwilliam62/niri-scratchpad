@@ -34,11 +34,11 @@ If Nix is not your jam, simply copy the [ns.py](./src/ns.py) script into your sy
 
 ## Usage
 
-See `niri-scratchpad --help` for the available commands.
+See `nscratch --help` for the available commands.
 
 ```console
-$ niri-scratchpad --help
-usage: niri-scratchpad [-h] (-id APP_ID | -t TITLE) [-s SPAWN] [-a] [-m]
+$ nscratch --help
+usage: nscratch [-h] (-id APP_ID | -t TITLE) [-s SPAWN] [-a] [-m]
 
 Niri Scratchpad support
 
@@ -78,8 +78,8 @@ Next, we have our scratchpad keybindings.
 
 ```kdl
 binds {
-    Mod+Ctrl+S { spawn-sh "niri-scratchpad -id spotify"; }
-    Mod+Ctrl+F { spawn-sh "niri-scratchpad -id nemo"; }
+    Mod+Ctrl+S { spawn-sh "nscratch -id spotify"; }
+    Mod+Ctrl+F { spawn-sh "nscratch -id nemo"; }
 }
 ```
 
@@ -99,11 +99,11 @@ window-rule {
 
 ### Spawn
 
-In the following example, we have a keybinding for the Audacious application, which is not spawned by Niri. So we can indicate that if the process does not yet exist, it should be spawned by `niri-scratchpad` (internally done via `niri msg spawn`).
+In the following example, we have a keybinding for the Audacious application, which is not spawned by Niri. So we can indicate that if the process does not yet exist, it should be spawned by `nscratch` (internally done via `niri msg spawn`).
 
 ```kdl
 binds {
-    Mod+Ctrl+A { spawn-sh "niri-scratchpad -id Audacious -s audacious"; }
+    Mod+Ctrl+A { spawn-sh "nscratch -id Audacious -s audacious"; }
 }
 ```
 
@@ -114,7 +114,7 @@ binds {
 Scratchpad animations are disabled by default. To enable them, set the `--animations` or `-a` flag, e.g.
 
 ```console
-$ niri-scratchpad -id nemo -a
+$ nscratch -id nemo -a
 ```
 
 The animation is achieved by switching the scratchpad window to tiling mode when it's moved to the scratch workspace, and subsequently making it a floating window when it's summoned.
