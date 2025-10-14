@@ -95,7 +95,7 @@ def main():
     group.add_argument('-t', '--title', help='The application title')
     parser.add_argument('-s', '--spawn', help='The process name to spawn when non-existing')
     parser.add_argument('-a', '--animations', action='store_true', help='Enable animations')
-    parser.add_argument('-m', '--multi-monitor', action='store_true', help='Multi-monitor support (coming soon)')
+    parser.add_argument('-m', '--multi-monitor', action='store_true', help='Multi-monitor support')
 
     ns(parser)
 

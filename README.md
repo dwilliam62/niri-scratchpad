@@ -50,7 +50,7 @@ options:
   -t, --title TITLE     The application title
   -s, --spawn SPAWN     The process name to spawn when non-existing
   -a, --animations      Enable animations
-  -m, --multi-monitor   Multi-monitor support (coming soon)
+  -m, --multi-monitor   Multi-monitor support
 ```
 
 Scratchpad windows can be searched either by `app-id` or `title`.
